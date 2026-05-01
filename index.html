@@ -3,41 +3,50 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"/>
   <script src="https://unpkg.com/jsqr@1.4.0/dist/jsQR.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: sans-serif;
-      background: #f5f5f5;
+      font-family: 'Rubik', sans-serif;
+      background: #f6efff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
-      gap: 12px;
+      padding: 24px 16px;
+      gap: 16px;
+      min-height: 100vh;
     }
-    #video {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
-      border: 3px solid #4A90E2;
-    }
-    canvas { display: none; }
     #status {
       font-size: 15px;
       color: #555;
       text-align: center;
       padding: 0 10px;
+      font-family: 'Rubik', sans-serif;
     }
+    #video {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      border: 3px solid #7740F3;
+    }
+    canvas { display: none; }
     #btn-scan {
-      padding: 12px 28px;
-      background: #4A90E2;
-      color: white;
+      padding: 14px 28px;
+      background: #7740F3;
+      color: #ffffff;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
       font-size: 16px;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
       cursor: pointer;
       width: 100%;
       max-width: 400px;
+      transition: background 0.2s;
+    }
+    #btn-scan:active {
+      background: #5f2fd6;
     }
   </style>
 </head>
